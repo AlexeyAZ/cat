@@ -1,0 +1,155 @@
+button {
+    white-space: nowrap;
+
+    &.btn-round {
+        border: none;
+        outline: none;
+    }
+}
+
+a {
+
+    &.btn-round {
+        display: inline-flex;
+        align-items: center;
+    }
+}
+
+.btn-round {
+    background-color: $btn-main-bg;
+    background-image: linear-gradient(to bottom, $main-yellow, $main-yellow-dark);
+    border-radius: $btn-height-pc / 2;
+    border-radius: calc(#{$btn-height-pc} / 2);
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'PFSquareSansPro';
+    font-size: $btn-font-size-pc;
+    text-align: center;
+    text-decoration: none;
+    padding: 0 45px;
+    position: relative;
+    height: $btn-height-pc;
+
+    @include media (w1024) {
+        border-radius: $btn-height-tablet / 2;
+        border-radius: calc(#{$btn-height-tablet} / 2);
+        font-size: $btn-font-size-tablet;
+        height: $btn-height-tablet;
+    }
+
+    @include media (w768) {
+        border-radius: $btn-height-mobile / 2;
+        border-radius: calc(#{$btn-height-mobile} / 2);
+        font-size: $btn-font-size-mobile;
+        padding: 0 20px;
+        height: $btn-height-mobile;
+    }
+
+    &:hover {
+        background-image: linear-gradient(to bottom, $main-yellow-dark, $main-yellow);
+
+        .btn-round__decor {
+
+            &_left {
+                top: -10px;
+                left: -25px;
+            }
+
+            &_right {
+                bottom: -10px;
+                right: -25px;
+            }
+        }
+    }
+
+    &_download {
+        margin-bottom: 1.5em;
+        position: relative;
+
+        &:after {
+            transform: translateX(-50%);
+            content: "PDF, 20Mb";
+            font-family: 'PFSquareSansPro';
+            font-weight: 300;
+            font-size: 16px;
+            color: white;
+            position: absolute;
+            top: calc(100% + 10px);
+            left: 50%;
+            white-space: nowrap;
+
+            @include media (w1024) {
+                
+            }
+
+            @include media (w768) {
+                
+            }
+        }
+
+        @include media (w768) {
+            
+        }
+    }
+
+    &_white {
+        background-image: none;
+        background-color: white;
+
+        &:hover {
+            background-image: none;
+        }
+    }
+
+    &_download-column {
+        margin-bottom: 50px;
+
+        &:after {
+            transform: translateX(-50%);
+            position: absolute;
+            left: 50%;
+            top: calc(100% + 10px);
+        }
+    }
+
+    &_clear {
+        
+        &:after {
+            content: none;
+        }
+    }
+
+    &__decor {
+        transition: 0.2s ease;
+        position: absolute;
+        
+        &_left {
+            top: -20px;
+            left: -30px;
+        }
+
+        &_right {
+            transform: scale(-1);
+            bottom: -20px;
+            right: -30px;
+        }
+    }
+}
+
+@keyframes btnAnimRed {
+    from {
+        box-shadow: 0 0 8px 6px $btn-main-bg, 0 0 12px 14px $btn-main-bg;
+    }
+    to {
+        box-shadow: 0 0 18px 6px rgba(255, 48, 26, 0), 0 0 4px 71px rgba(255, 48, 26, 0);
+    }
+}
+
+@keyframes btnAnimWhite {
+    from {
+        box-shadow: 0 0 8px 6px white, 0 0 12px 14px white;
+    }
+    to {
+        box-shadow: 0 0 18px 6px rgba(255, 48, 26, 0), 0 0 4px 71px rgba(255, 48, 26, 0);
+    }
+}

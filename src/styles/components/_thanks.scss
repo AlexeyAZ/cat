@@ -1,0 +1,119 @@
+.thanks {
+    background-image: url("../img/sec1-bg.jpg");
+    color: white;
+    overflow: hidden;
+    padding-bottom: 160px;
+
+    @include media(w1024) {
+        padding-bottom: 40px;
+    }
+
+    &__heading {
+        border-bottom: 2px solid white;
+        font-weight: 800;
+        font-size: 75px;
+        padding-bottom: 0.4em;
+
+        @include media(w1024) {
+            font-size: 50px;
+        }
+
+        @include media(w768) {
+            font-size: 40px;
+        }
+    }
+
+    &__title {
+        // font-size: 58px;
+        // margin-bottom: 1em;
+
+        // @include media(w1024) {
+        //     font-size: 40px;
+        // }
+
+        // @include media(w768) {
+        //     font-size: 30px;
+        // }
+    }
+
+    &__under-title {
+
+    }
+
+    &__subtitle {
+        font-family: 'GetCoffee', Arial, Helvetica, sans-serif;
+        font-size: 70px;
+        margin-bottom: 10px;
+
+        @include media(w1024) {
+            //font-size: 30px;
+        }
+
+        @include media(w768) {
+            font-size: 30px;
+        }
+    }
+
+    &__under-subtitle {
+        font-family: 'Pintanina', Arial, Helvetica, sans-serif;
+        font-size: 62px;
+
+        @include media(w768) {
+            font-size: 30px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 1.5em;
+
+        @include media(w768) {
+            
+            br {
+                display: none;
+            }
+        }
+    }
+
+    &__under-text {
+
+        @include media(w768) {
+            
+            br {
+                display: none;
+            }
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        margin: 0 auto 30px;
+        width: 100%;
+    }
+
+    &__buttons-link {
+        color: white;
+    }
+
+    &__btn {
+        justify-content: center;
+        color: black;
+        margin-bottom: 1em;
+
+        &:hover {
+            color: black;
+        }
+    }
+
+    &__kids {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+
+        @include media(w1024) {
+            display: none;
+        } 
+    }
+}

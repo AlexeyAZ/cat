@@ -1,0 +1,93 @@
+.sec6 {
+    background-color: $main-cyan-light;
+    overflow: hidden;
+    padding-top: 60px;
+    
+    &__container {
+        text-align: center;
+    }
+
+    &__content {
+        background-image: url("../img/sec6-gray-bg.png");
+        background-size: 100% 100%;
+        padding: 80px 20px 60px;
+
+        @include media(w1024) {
+            margin-left: -4%;
+            margin-right: -4%;
+        }
+
+        @include media(w768) {
+            margin-left: -7%;
+            margin-right: -7%;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        text-align: center;
+
+        @include media(w768) {
+            display: block;
+        }
+    }
+
+    &__list-item {
+        margin-bottom: 40px;
+        padding: 0 10px;
+        width: 25%;
+
+        @include media(w1024) {
+
+            @for $i from 1 through 3 {
+
+                &:nth-child(#{$i}) {
+                    width: calc(100% / 3);
+                }
+            }
+
+            @for $j from 4 through 7 {
+
+                &:nth-child(#{$j}) {
+                    width: 40%;
+                }
+            }
+        }
+
+        @include media(w768) {
+            width: auto;
+
+            @for $j from 1 through 7 {
+
+                &:nth-child(#{$j}) {
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    &__list-img-wrap {
+        position: relative;
+        height: 130px;
+    }
+
+    &__list-img-bg {
+        transform: translateX(-30%);
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        height: $sec6-list-img-bg-size;
+        width: $sec6-list-img-bg-size;
+    }
+
+    &__list-img {
+        transform: translateY(-50%);
+        top: 50%;
+        position: relative;
+        z-index: 1;
+    }
+}

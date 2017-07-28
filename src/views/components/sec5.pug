@@ -1,0 +1,16 @@
+section.sec.sec5
+    div.container.ta-center
+        h3.
+            Отличная репутация театра известна далеко за пределами Санкт-Петербурга
+        p.mb1.
+            почитайте, что пишут о нас родители
+        div.sec5__gallery-wrap
+            div.sec5__gallery
+                - for(var i = 1; i <= 4; i++) {
+                div.sec5__gallery-item
+                    div.sec5__gallery-item-container
+                        img(src="img/sec5-border.png", alt="").sec5__gallery-border
+                        div(style="background-image:url('img/sec5-img" + i + ".jpg')").sec5__gallery-img
+                - }
+            img(src="img/sec5-arrow.png", alt="").sec5__gallery-arrow.sec5__gallery-arrow_left
+            img(src="img/sec5-arrow.png", alt="").sec5__gallery-arrow.sec5__gallery-arrow_right

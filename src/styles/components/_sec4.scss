@@ -1,0 +1,56 @@
+.sec4 {
+    background-color: $main-cyan-light;
+    padding: 60px 0;
+
+    @include media(w1024) {
+        padding: 20px 0;
+    }
+
+    &__row {
+        display: flex;
+
+        @include media(w1024) {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    &__col {
+        width: 50%;
+
+        @include media(w1024) {
+            width: auto;
+        }
+
+        &_text {
+            display: flex;
+            align-items: center;
+            padding-left: 30px;
+
+            @include media(w1024) {
+                display: block;
+                padding-left: 0;
+            }
+        }
+
+        p {
+            margin-bottom: 1.5em;
+        }
+    }
+
+    &__img {
+        width: 100%;
+
+        @include media(w1024) {
+            width: auto;
+        }
+
+        @include media(w768) {
+            max-width: 300px;
+        }
+    }
+
+    &__text {
+
+    }
+}

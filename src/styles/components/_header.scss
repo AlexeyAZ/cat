@@ -1,0 +1,113 @@
+.header {
+    //background-image: url("../img/decor-clouds.png");
+    background-position: center top;
+    background-size: auto 100%;
+    color: black;
+    margin-bottom: 80px;
+    padding: 30px 0 0;
+    position: relative;
+
+    @include media(w1024) {
+        margin-bottom: 30px;
+        padding-bottom: 80px;
+    }
+
+    @include media(w768) {
+        background-color: white;
+        margin-bottom: 50px;
+        padding-bottom: 0;
+    }
+
+    &__clouds {
+        transform: translateX(-50%);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        min-width: 1980px;
+        min-height: 100%;
+
+        @include media(w768) {
+            top: auto;
+            bottom: -60px;
+            min-width: auto;
+            min-height: auto;
+        }
+    }
+	
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        @include media(w1024) {
+            flex-flow: wrap;
+        }
+
+        @include media(w768) {
+            flex-flow: nowrap column;
+        }
+    }
+
+    &__logo-img {
+        
+        @include media(w768) {
+            max-width: 250px;
+        }
+    }
+
+    &__item {
+
+        &_logo {
+
+            @include media(w1024) {
+                
+            }
+        }
+
+        &_descr {
+
+            @include media(w1024) {
+                order: 3;
+                padding-top: 20px;
+                width: 100%;
+            }
+
+            @include media(w768) {
+                order: 2;
+                width: auto;
+            }
+        }
+
+        &_contacts {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            @include media(w1024) {
+                order: 2;
+            }
+
+            @include media(w768) {
+                order: 3;
+                align-items: center;
+            }
+        }
+    }
+
+    &__descr {
+        font-size: 16px;
+    }
+
+    &__descr-br-mobile {
+        display: none;
+
+        @include media(w768) {
+            display: inline;
+        }
+    }
+
+    &__link {
+        color: black;
+    }
+}

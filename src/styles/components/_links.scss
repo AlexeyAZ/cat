@@ -1,0 +1,21 @@
+a {
+    display: inline-block;
+    transition: $trans;
+
+    &:hover {
+        color: $main-yellow-dark;
+    }
+}
+
+.link {
+    text-decoration: none;
+
+    &_getcall {
+        border-bottom: 2px dotted currentColor;
+        font-size: 16px;
+
+        @include media(w1024) {
+            
+        }
+    }
+}

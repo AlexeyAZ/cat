@@ -1,0 +1,24 @@
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 0.5em;
+}
+
+.s {
+    font-size: 25px;
+}
+
+.m {
+    font-size: 33px;
+
+    @include media(w768) {
+        font-size: 25px;
+    }
+}
+
+h3 {
+    font-size: 66px;
+    font-family: 'Pintanina';
+
+    @include media(w768) {
+        font-size: 50px;
+    }
+}

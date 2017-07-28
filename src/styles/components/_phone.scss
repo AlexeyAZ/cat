@@ -1,0 +1,12 @@
+.phone {
+    font-size: 25px;
+    text-decoration: none;
+
+    @include media(w1024) {
+        
+    }
+
+    &:hover {
+        color: $main-yellow-dark;
+    }
+}

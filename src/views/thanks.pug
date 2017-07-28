@@ -1,0 +1,45 @@
+extends templates/layout
+
+block vars
+    - var title = 'Чеширский кот'
+
+block content
+    include components/form
+    section.sec.thanks
+        include components/header
+        div.container
+            div.sec1__content
+                div.sec1__heading
+                    div.sec1__heading-container
+                        p.sec1__heading-top.thanks__title.
+                            <span id="thanksName"></span>
+                        p.sec1__heading-bottom.thanks__under-title.
+                            наши менеджеры
+                        img(src="img/sec1-heading-decor.png", alt="").sec1__heading-decor.sec1__heading-decor_left
+                        img(src="img/sec1-heading-decor.png", alt="").sec1__heading-decor.sec1__heading-decor_right
+                    p.thanks__subtitle.
+                        уже занимаются
+                    p.thanks__under-subtitle.
+                        вашей заявкой
+                    div
+                        img(src="img/thanks-decor.png", alt="")
+                    p.m.light.thanks__text.
+                         Мы постараемся связаться с Вами<br> в ближайшее время
+                    div.thanks__buttons
+                        +btn("Скачать презентацию", "yellow", true)(class="thanks__btn" href="doc/mk.pdf" target="_blank")
+                        a(href="/index.html").thanks__buttons-link.s.light.
+                            Вернуться на сайт
+                    p.thanks__under-text.s.medium.
+                         График работы с 9:00 до 18:00<br> Поэтому, если вы оставили заявку<br> в нерабочее время, мы перезвоним вам<br> на следующий рабочий день
+        img(src="img/thanks-kids.png", alt="").thanks__kids
+            //- p.thanks__heading.
+            //-     <span id="thanksName"></span> менеджеры уже занимаются вашей заявкой
+            //- p.thanks__title.
+            //-     Мы свяжемся с Вами в ближайшее время
+            //- div.thanks__buttons
+            //-     a(href="doc/mk.pdf" target="_blank").btn-round.btn-round_download.
+            //-         Открыть презентацию
+            //-     a(href="/index.html").thanks__links-link.
+            //-         Вернуться на сайт
+            //- p.thanks__subtitle.
+            //-     График работы с 9.00 до 23.00 Поэтому, если вы оставили заявку в нерабочее время, мы перезвоним вам на следующий рабочий день

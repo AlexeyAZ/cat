@@ -1,0 +1,17 @@
+div#bottomFormContainer.bottom-form-container
+    img(src="img/sec8-form-bg.png", alt="").bottom-form__bg
+    p.bottom-form__title.
+        Проверьте, свободен ли ваш город для работы по нашей франшизе?
+    form(data-next="#bigForm")#bottomForm.bottom-form
+        label.bottom-form__label
+            input(type="text" name="city" placeholder="Ваш город" required).input
+        label.bottom-form__label
+            input(type="text" name="phone" placeholder="Телефон" required).input
+        label.bottom-form__label
+            input(type="email" name="email" placeholder="E-mail" required).input
+        label.bottom-form__label
+            +btn("Скачать презентацию", "yellow")(class="bottom-form__btn")
+        label.bottom-form__label
+            input(type="checkbox" checked required)
+            span.bottom-form__politic-text.
+                Нажимая кнопку "Проверить", я даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности

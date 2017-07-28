@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Чеширский кот</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" sizes="16x16">
+    <link rel="stylesheet" href="styles/vendor.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;"></svg>
+    <div class="form-wrap form-wrap_small">
+      <div class="form-container" id="smallFormContainer">
+        <div class="form__close"></div>
+        <p class="form__heading">Оставьте заявку на презентацию франшизы</p>
+        <form class="form" id="smallForm" data-next="#bigForm">
+          <input class="form__input" type="text" name="name" placeholder="Ваше имя" required="">
+          <input class="form__input" type="text" name="phone" placeholder="Ваш телефон" required="">
+          <input class="form__input" type="email" name="email" placeholder="Ваш email" required="">
+              <button class="btn-round_yellow btn-round form__btn form__btn_size">Скачать<img class="btn-round__decor btn-round__decor_left" src="img/btn-decor-left-yellow.png" alt=""><img class="btn-round__decor btn-round__decor_right" src="img/btn-decor-left-yellow.png" alt=""></button>
+          <!--button.btn-round.form__btn.form__btn_size.js-big-btn.Скачать
+          -->
+          <label class="form__label">
+            <input type="checkbox" checked required><span class="form__label-security-text">Нажимая кнопку «Скачать», я даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности</span>
+          </label>
+        </form>
+      </div>
+    </div>
+    <div class="form-wrap form-wrap_big">
+      <div class="form-container" id="bigFormContainer">
+        <div class="form__close"></div>
+        <p class="form__title">Спасибо!</p>
+        <p class="form__descr">В ближайшее время мы обработаем Вашу заявку. Для того, чтобы наш специалист мог максимально подробно ответить на все Ваши вопросы, заполните, пожалуйста, следующую форму. Заранее благодарим</p>
+        <form class="form" method="POST" id="bigForm">
+          <input class="js-hidden-name" type="hidden" name="name1">
+          <input class="js-hidden-phone" type="hidden" name="phone1">
+          <input class="js-hidden-email" type="hidden" name="email1">
+          <label class="form__label"><span>Введите Ваш город</span>
+            <input class="form__input" type="text" name="city" placeholder="" required="">
+          </label>
+          <label class="form__label"><span>Введите Ваш возраст</span>
+            <input class="form__input" type="text" name="age" placeholder="" required="">
+          </label>
+          <label class="form__label"><span>Наличие бизнеса / Опыт бизнеса</span>
+            <select class="form__select" name="business">
+              <option value="yes">Да</option>
+              <option value="no">Нет</option>
+            </select>
+          </label>
+          <label class="form__label"><span>Объем планируемых инвестиций</span>
+            <select class="form__select" name="volume">
+              <option value="100 000 - 250 000">100 000 — 250 000 рублей</option>
+              <option value="250 000 - 500 000">250 000 — 500 000 рублей</option>
+              <option value="500 000 - 750 000">500 000 — 750 000 рублей</option>
+              <option value="750 000 - 1 000 000">750 000 — 1 000 000 рублей</option>
+              <option value="1 000 000 - 1 500 000">1 000 000 — 1 500 000 рублей</option>
+              <option value="1 500 000 - 3 000 000">1 500 000 — 3 000 000 рублей</option>
+              <option value="3 000 000">Более 3 000 000 рублей</option>
+            </select>
+          </label>
+          <!--button.btn-round.form__btn.form__btn_center.Получить предложение
+          -->
+              <button class="btn-round_yellow btn-round form__btn form__btn_center">Получить предложение<img class="btn-round__decor btn-round__decor_left" src="img/btn-decor-left-yellow.png" alt=""><img class="btn-round__decor btn-round__decor_right" src="img/btn-decor-left-yellow.png" alt=""></button>
+        </form>
+      </div>
+    </div>
+    <section class="sec sec1">
+      <header class="header"><img class="header__clouds" src="img/decor-clouds.png" alt="">
+        <div class="container header__container">
+          <div class="header__item header__item_logo"><a class="header__logo" href="/"><img class="header__logo-img" src="img/header-logo.png" alt=""></a></div>
+          <div class="header__item header__item_descr">
+            <p class="header__descr ta-center">Франшиза детского<br class="header__descr-br-mobile"> театрального арт-центра<br> с прибылью от 1,5 млн в год</p>
+          </div>
+          <div class="header__item header__item_contacts"><a class="header__link phone" href="tel:89531562095" data-phone="89531562095">8 (953) 156-20-95</a><a class="header__link link link_getcall js-small-btn" href="">Заказать звонок</a></div>
+        </div>
+      </header>
+      <div class="container color-white">
+        <div class="sec1__content">
+          <div class="sec1__heading">
+            <div class="sec1__heading-container">
+              <p class="sec1__heading-top">Подарите</p>
+              <p class="sec1__heading-bottom">детям вашего города</p><img class="sec1__heading-decor sec1__heading-decor_left" src="img/sec1-heading-decor.png" alt=""><img class="sec1__heading-decor sec1__heading-decor_right" src="img/sec1-heading-decor.png" alt="">
+            </div><img class="sec1__title" src="img/sec1-title.png" alt="">
+            <p class="sec1__subtitle">развлечений</p>
+            <p class="m light mb1 sec1__text">организовывайте интерактивные<br> спектакли и зарабатывайте<br> <span class="medium">от 125 000 руб./мес.</span></p>
+          </div>
+              <button class="btn-round_yellow btn-round btn-round_download sec1__btn js-small-btn">Скачать презентацию<img class="btn-round__decor btn-round__decor_left" src="img/btn-decor-left-yellow.png" alt=""><img class="btn-round__decor btn-round__decor_right" src="img/btn-decor-left-yellow.png" alt=""></button>
+        </div>
+      </div><img class="sec1__man" src="img/sec1-man.png" alt=""><img class="sec1__clouds" src="img/sec1-bottom-clouds.png" alt="">
+    </section>
+    <section class="sec sec2">
+      <div class="container">
+        <h3 class="ta-center mb0">Каждому родителю хочется подобрать</h3>
+        <p class="m ta-center sec2__subtitle">для своего ребенка секцию, кружок и занятия, которые бы способствовали гармоническому развитию его личности</p>
+        <div class="sec2__row">
+          <div class="sec2__col sec2__col_img">
+            <div class="sec2__img-wrap"><img class="sec2__img" src="img/sec2-img1.png" alt=""><img class="sec2__decor sec2__decor_1-1" src="img/sec2-img1-decor1.png" alt=""><img class="sec2__decor sec2__decor_1-2" src="img/sec2-img1-decor2.png" alt=""></div>
+          </div>
+          <div class="sec2__col sec2__col_text sec2__col_text-right">
+            <p class="light">Дети готовы часами сидеть за компьютером или смартфоном, и даже поиграть на свежем воздухе их часто приходится уговаривать!</p>
+          </div>
+        </div>
+        <div class="sec2__row sec2__row_reverse">
+          <div class="sec2__col sec2__col_img">
+            <div class="sec2__img-wrap"><img class="sec2__img" src="img/sec2-img2.png" alt=""><img class="sec2__decor sec2__decor_2-1" src="img/sec2-img2-decor1.png" alt=""></div>
+          </div>
+          <div class="sec2__col sec2__col_text sec2__col_text-left">
+            <p class="light">Родители остро чувствуют проблему отсутствия у детей интереса к активному развивающему отдыху и постоянно находятся в поисках досуговых центров с познавательными программами</p>
+          </div>
+        </div>
+        <div class="sec2__row">
+          <div class="sec2__col sec2__col_img">
+            <div class="sec2__img-wrap"><img class="sec2__img" src="img/sec2-img3.png" alt=""><img class="sec2__decor sec2__decor_3-1" src="img/sec2-img3-decor1.png" alt=""><img class="sec2__decor sec2__decor_3-2" src="img/sec2-img3-decor2.png" alt=""></div>
+          </div>
+          <div class="sec2__col sec2__col_text sec2__col_text-right">
+            <p class="light">Здесь приходят на помощь арт-центры с авторскими программами и форматом обучения через игру, который может увлечь любого ребенка</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec sec3">
+      <div class="container">
+        <div class="sec3__img-wrap"><img class="sec3__img sec3__img_decor" src="img/sec3-img-mobile-decor.png" alt="">
+          <div class="sec3__img-content">
+            <p class="sec3__img-text">
+              Девять лет назад в Санкт-Петербурге мы открыли
+              <span class="medium">один из первых</span>
+              в России детских интерактивных театров
+            </p>
+                <button class="btn-round_white btn-round sec3__btn js-small-btn">Узнать подробнее<img class="btn-round__decor btn-round__decor_left" src="img/btn-decor-left-white.png" alt=""><img class="btn-round__decor btn-round__decor_right" src="img/btn-decor-left-white.png" alt=""></button>
+          </div><img class="sec3__img sec3__img_pc" src="img/sec3-img.png" alt=""><img class="sec3__img sec3__img_mobile" src="img/sec3-img-mobile1.png" alt="">
+        </div>
+      </div>
+      <div class="sec3__content">
+        <div class="container sec3__content-container">
+          <p class="m ta-center">Особенность нашего театра в том, что главные актёры на наших мероприятиях — </p>
+          <h3 class="ta-center">это сами дети</h3>
+          <div class="sec3__row">
+            <div class="sec3__col sec3__col_img"><img class="sec3__decor-img" src="img/sec3-decor.png" alt=""></div>
+            <div class="sec3__col sec3__col_text">
+              <p>В нашем репертуаре театральные постановки, детские праздники и Дни рождения, музыкальные занятия и летние занятия по знакомству с творческими профессиями по авторским сценариям</p>
+              <p>
+                Благодаря помощи профессиональных актеров, а также качественным декорациям и реквизиту
+                <span class="medium">дети легко вживаются в роли</span>
+                и весело проводят время
+              </p>
+            </div>
+          </div>
+          <h3 class="ta-center sec3__video-title">Посмотрите, как проходят наши спектакли!</h3>
+          <div class="sec3__video-wrap">
+            <div class="sec3__video-container"><img class="sec3__video-bg" src="img/sec3-video-bg.png" alt="">
+              <iframe class="sec3__video-frame" width="560" height="315" src="https://www.youtube.com/embed/ZLKk8hj0tlw" frameborder="0" allowfullscreen></iframe><img class="sec3__decor sec3__decor_left" src="img/sec1-heading-decor.png" alt=""><img class="sec3__decor sec3__decor_right" src="img/sec1-heading-decor.png" alt="">
+            </div>
+          </div>
+        </div><img class="sec3__clouds" src="img/sec4-clouds.png" alt="">
+      </div>
+    </section>
+    <section class="sec sec4">
+      <div class="container">
+        <div class="sec4__row">
+          <div class="sec4__col"><img class="sec4__img" src="img/sec4-photos.png" alt=""></div>
+          <div class="sec4__col sec4__col_text">
+            <div class="sec4__text">
+              <p>Наши мероприятия несут смысловую нагрузку и развивают творческие способности детей.</p>
+              <p>Это выделяет наше предложение среди обычных детских развлекательных центров. </p>
+              <p>
+                За десять лет мы организовали
+                <span class="medium">больше 3 000 дней рождения и около 900 спектаклей</span>
+                для детей всех возрастов.
+              </p>
+                  <button class="btn-round_yellow btn-round js-small-btn">Узнать подробнее<img class="btn-round__decor btn-round__decor_left" src="img/btn-decor-left-yellow.png" alt=""><img class="btn-round__decor btn-round__decor_right" src="img/btn-decor-left-yellow.png" alt=""></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec sec5">
+      <div class="container ta-center">
+        <h3>Отличная репутация театра известна далеко за пределами Санкт-Петербурга</h3>
+        <p class="mb1">почитайте, что пишут о нас родители</p>
+        <div class="sec5__gallery-wrap">
+          <div class="sec5__gallery">
+            <div class="sec5__gallery-item">
+              <div class="sec5__gallery-item-container"><img class="sec5__gallery-border" src="img/sec5-border.png" alt="">
+                <div class="sec5__gallery-img" style="background-image:url('img/sec5-img1.jpg');"></div>
+              </div>
+            </div>
+            <div class="sec5__gallery-item">
+              <div class="sec5__gallery-item-container"><img class="sec5__gallery-border" src="img/sec5-border.png" alt="">
+                <div class="sec5__gallery-img" style="background-image:url('img/sec5-img2.jpg');"></div>
+              </div>
+            </div>
+            <div class="sec5__gallery-item">
+              <div class="sec5__gallery-item-container"><img class="sec5__gallery-border" src="img/sec5-border.png" alt="">
+                <div class="sec5__gallery-img" style="background-image:url('img/sec5-img3.jpg');"></div>
+              </div>
+            </div>
+            <div class="sec5__gallery-item">
+              <div class="sec5__gallery-item-container"><img class="sec5__gallery-border" src="img/sec5-border.png" alt="">
+                <div class="sec5__gallery-img" style="background-image:url('img/sec5-img4.jpg');"></div>
+              </div>
+            </div>
+          </div><img class="sec5__gallery-arrow sec5__gallery-arrow_left" src="img/sec5-arrow.png" alt=""><img class="sec5__gallery-arrow sec5__gallery-arrow_right" src="img/sec5-arrow.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="sec sec6">
+      <div class="container sec6__container">
+        <h3>В 2017 году мы вышли на среднюю прибыль 225 000 рублей в месяц</h3>
+        <p class="m mb1">— и теперь планируем расширить сеть арт-центров<br> «Чеширский кот» по всей России</p>
+        <div class="sec6__content">
+          <p>Станьте владельцем интерактивного театра уже через два месяца с нашей исключительной поддержкой. </p>
+          <p class="light mb1">Во франшизу «Чеширский кот» мы включили всё для комфортного открытия и работы арт-центра:</p>
+          <div class="sec6__list">
+            <div class="sec6__list-item">
+              <div class="sec6__list-img-wrap">
+                <div class="sec6__list-img-bg"></div><img class="sec6__list-img" src="img/sec6-img1.png" alt="">
+              </div>
+              <div class="sec6__list-text">
+                <p>1. Бизнес-план</p>
+              </div>
+            </div>
+            <div class="sec6__list-item">
+              <div class="sec6__list-img-wrap">
+                <div class="sec6__list-img-bg"></div><img class="sec6__list-img" src="img/sec6-img2.png" alt="">
+              </div>
+              <div class="sec6__list-text">
+                <p>2. Готовые сценарии спектаклей</p>
+              </div>
+            </div>
+            <div class="sec6__list-item">
+              <div class="sec6__list-img-wrap">
+                <div class="sec6__list-img-bg"></div><img class="sec6__list-img" src="img/sec6-img3.png" alt="">
+              </div>
+              <div class="sec6__list-text">
+                <p>3. Возможность изготовления костюмов, кукол и реквизита</p>
+              </div>
+            </div>
+            <div class="sec6__list-item">
+              <div class="sec6__list-img-wrap">
+                <div class="sec6__list-img-bg"></div><img class="sec6__list-img" src="img/sec6-img4.png" alt="">
+              </div>
+              <div class="sec6__list-text">
+                <p>4. Фото- и видеоматериалы</p>
+              </div>
+            </div>
+            <div class="sec6__list-item">
+              <div class="sec6__list-img-wrap">
+                <div class="sec6__list-img-bg"></div><img class="sec6__list-img" src="img/sec6-img5.png" alt="">
+              </div>
+              <div class="sec6__list-text">
+                <p>5. Рекламные материалы</p>
+              </div>
+            </div>
+            <div class="sec6__list-item">
+              <div class="sec6__list-img-wrap">
+                <div class="sec6__list-img-bg"></div><img class="sec6__list-img" src="img/sec6-img6.png" alt="">
+              </div>
+              <div class="sec6__list-text">
+                <p>6. Помощь в подборе команды актёров</p>
+              </div>
+            </div>
+            <div class="sec6__list-item">
+              <div class="sec6__list-img-wrap">
+                <div class="sec6__list-img-bg"></div><img class="sec6__list-img" src="img/sec6-img7.png" alt="">
+              </div>
+              <div class="sec6__list-text">
+                <p>7. Помощь в подготовке мероприятий, проведение репетиций дистанционно и с выездом в Ваш город</p>
+              </div>
+            </div>
+          </div>
+          <div class="sec6__content-bottom">
+            <p class="medium mb2">Изучите полный состав франшизы</p>
+                <button class="btn-round_yellow btn-round js-small-btn">Сохранить презентацию<img class="btn-round__decor btn-round__decor_left" src="img/btn-decor-left-yellow.png" alt=""><img class="btn-round__decor btn-round__decor_right" src="img/btn-decor-left-yellow.png" alt=""></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec sec7">
+      <div class="container">
+        <div class="sec7__bg-wrap">
+          <div class="sec7__bg-text">
+            <h3 class="sec7__bg-title">Вы откроете свой бизнес, а мы поможем избежать типичных ошибок новичков</h3>
+            <p class="m sec7__bg-subtitle">— первый спектакль вы поставите уже через 65 дней!</p>
+          </div><img class="sec7__bg-img sec7__bg-img_pc" src="img/sec7-decor-bg1.png" alt=""><img class="sec7__bg-img sec7__bg-img_mobile" src="img/sec7-decor-bg-mobile.png" alt=""><img class="sec7__decor-bg-top" src="img/sec7-decor-bg-top.png" alt="">
+        </div>
+      </div>
+      <div class="sec7__content">
+        <div class="container">
+          <div class="sec7__decor-top"></div>
+          <h3 class="ta-center">Для открытия арт-центра Вам понадобится</h3>
+          <p class="m ta-center mb1"><span class="medium">от 600 000 рублей</span>
+            паушального взноса<br>
+            <span class="medium">и от 1 млн рублей</span>
+            инвестиций в помещение, костюмы и рекламу
+          </p>
+          <div class="sec7__row">
+            <div class="sec7__col"><img class="sec7__img" src="img/sec7-notebook.png" alt=""></div>
+            <div class="sec7__col sec7__col_text">
+              <div class="sec7__text">
+                <p class="mb1">Узнайте этапы инвестирования и статьи расходов из нашей финансовой модели:</p>
+                    <button class="btn-round_white btn-round js-small-btn">Скачать модель<img class="btn-round__decor btn-round__decor_left" src="img/btn-decor-left-white.png" alt=""><img class="btn-round__decor btn-round__decor_right" src="img/btn-decor-left-white.png" alt=""></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec sec8">
+      <div class="sec8__clouds">
+        <div class="sec8__clouds-text">
+          <h3>Начните подготовку к открытию</h3>
+          <p class="m">детского арт-центра нового поколения прямо сейчас<br> — это легко, и ни к чему вас не обязывает</p>
+        </div><img class="sec8__clouds-img" src="img/decor-clouds.png" alt="">
+      </div>
+      <div class="container">
+        <div class="bottom-form-container" id="bottomFormContainer"><img class="bottom-form__bg" src="img/sec8-form-bg.png" alt="">
+          <p class="bottom-form__title">Проверьте, свободен ли ваш город для работы по нашей франшизе?</p>
+          <form class="bottom-form" data-next="#bigForm" id="bottomForm">
+            <label class="bottom-form__label">
+              <input class="input" type="text" name="city" placeholder="Ваш город" required>
+            </label>
+            <label class="bottom-form__label">
+              <input class="input" type="text" name="phone" placeholder="Телефон" required>
+            </label>
+            <label class="bottom-form__label">
+              <input class="input" type="email" name="email" placeholder="E-mail" required>
+            </label>
+            <label class="bottom-form__label">
+                  <button class="btn-round_yellow btn-round bottom-form__btn">Скачать презентацию<img class="btn-round__decor btn-round__decor_left" src="img/btn-decor-left-yellow.png" alt=""><img class="btn-round__decor btn-round__decor_right" src="img/btn-decor-left-yellow.png" alt=""></button>
+            </label>
+            <label class="bottom-form__label">
+              <input type="checkbox" checked required><span class="bottom-form__politic-text">Нажимая кнопку «Проверить», я даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности</span>
+            </label>
+          </form>
+        </div>
+      </div><img class="sec8__man" src="img/sec8-man.png" alt="">
+    </section>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__block footer__block_social">
+          <p class="footer__text footer__text_copy">© Арт-центр Чеширский кот, 2017 </p>
+          <div class="footer__social">
+            <p class="footer__text footer__text_social-title">Мы в социальных сетях</p>
+            <ul class="footer__social-list">
+              <li class="footer__social-item"><a class="footer__link footer__link_social" href="https://vk.com/che_kotik" target="_blank"><i class="fa fa-vk"></i></a></li>
+              <!--li.footer__social-item
+              a(href="" target="_blank").footer__link.footer__link_social
+                  i.fa.fa-facebook
+              -->
+              <!--li.footer__social-item
+              a(href="" target="_blank").footer__link.footer__link_social
+                  i.fa.fa-tripadvisor
+              -->
+            </ul>
+          </div>
+        </div>
+        <div class="footer__block footer__block_contacts">
+          <p class="footer__text footer__text_adress">Наш офис: Санкт-Петербург Невский 124 м. пл. Восстания</p>
+          <div class="footer__contacts"><a class="footer__text footer__link footer__link_politic" href="doc/politic.pdf" target="_blank">Политика конфиденциальности</a>
+            <!--p.footer__text
+            |e-mail:
+            a(href="mailto:uno@uno-perm.ru").footer__link.
+                uno@uno-perm.ru
+            -->
+          </div>
+        </div>
+        <div class="footer__block footer__block_feedback"><a class="footer__phone" href="tel:89531562095" data-phone="89531562095">8 (953) 156-20-95</a><a class="footer__link footer__link_getcall js-small-btn">Заказать звонок</a></div>
+      </div>
+    </footer>
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>

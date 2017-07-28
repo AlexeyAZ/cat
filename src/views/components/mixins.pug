@@ -1,0 +1,13 @@
+mixin btn(text, color, link)
+    - if(link) {
+        a(class="btn-round_" + color).btn-round&attributes(attributes)
+            |#{text}
+            img(src="img/btn-decor-left-" + color + ".png", alt="").btn-round__decor.btn-round__decor_left
+            img(src="img/btn-decor-left-" + color + ".png", alt="").btn-round__decor.btn-round__decor_right
+    - } else {
+        button(class="btn-round_" + color).btn-round&attributes(attributes)
+            |#{text}
+            img(src="img/btn-decor-left-" + color + ".png", alt="").btn-round__decor.btn-round__decor_left
+            img(src="img/btn-decor-left-" + color + ".png", alt="").btn-round__decor.btn-round__decor_right
+    - }
+    

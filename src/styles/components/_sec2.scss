@@ -1,0 +1,131 @@
+.sec2 {
+    overflow: hidden;
+    padding-top: 40px;
+
+    &__subtitle {
+        margin-bottom: 2em;
+    }
+
+    &__row {
+        display: flex;
+        flex-flow: wrap;
+        margin-bottom: 100px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @include media(w1024) {
+            margin-bottom: 70px;
+        }
+
+        @include media(w768) {
+            display: block;
+        }
+
+        &_reverse {
+
+            .sec2__col_img {
+                order: 2;
+            }
+
+            .sec2__col_text {
+                order: 1;
+            }
+        }
+    }
+
+    &__col {
+        width: 50%;
+
+        @include media(w768) {
+            text-align: center;
+            width: 100%;
+        }
+
+        &_img {
+            display: flex;
+            justify-content: center;
+
+            @include media(w768) {
+                margin-bottom: 80px;
+            }
+        }
+
+        &_text {
+            padding-top: 12%;
+
+            @include media(w768) {
+                padding-top: 0;
+            }
+        }
+
+        &_text-right {
+            padding-left: 10%;
+
+            @include media(w768) {
+                padding-left: 0;
+            }
+        }
+
+        &_text-left {
+            padding-right: 10%;
+
+            @include media(w768) {
+                padding-right: 0;
+            }
+        }
+    }
+
+    &__img-wrap {
+        display: inline-block;
+        position: relative;
+
+        @include media(w768) {
+            //width: 100%;
+        }
+    }
+
+    &__img {
+
+        @include media(w1024) {
+            max-width: 450px;
+        }
+
+        @include media(w768) {
+            width: 96%;
+        }
+    }
+
+    &__decor {
+        position: absolute;
+        
+        &_1-1 {
+            bottom: -14%;
+            right: 16%;
+        }
+
+        &_1-2 {
+            left: 80%;
+        }
+
+        &_2-1 {
+            top: 40%;
+            left: 80%;
+        }
+
+        &_3-1 {
+            right: 80%;
+            bottom: 90%;
+        }
+
+        &_3-2 {
+            top: 50%;
+            left: 97%;
+        }
+
+        @include media(w768) {
+            max-width: 140%;
+        }
+    }
+}

@@ -1,0 +1,129 @@
+.sec1 {
+    background-image: url("../img/sec1-bg.jpg");
+    overflow: hidden;
+    padding-bottom: 140px;
+
+    @include media(w1024) {
+        padding-bottom: 0;
+    }
+
+    &__content {
+        text-align: center;
+        padding-right: 50%;
+
+        @include media(w1024) {
+            padding-right: 0;
+        }
+    }
+
+    &__heading {
+    }
+
+    &__heading-container {
+        display: inline-block;
+        position: relative;
+    }
+
+    &__heading-top {
+        font-size: 83px;
+        font-family: 'GetCoffee';
+        margin-bottom: 0;
+
+        @include media(w768) {
+            font-size: 40px;
+        }
+    }
+
+    &__heading-bottom {
+        font-size: 58px;
+        font-family: 'Pintanina';
+        margin-bottom: 0;
+
+        @include media(w768) {
+            font-size: 28px;
+        }
+    }
+
+    &__heading-decor {
+        position: absolute;
+        top: 0;
+
+        &_left {
+            right: 100%;
+        }
+
+        &_right {
+            transform: scaleX(-1);
+            left: 100%;
+        }
+
+        @include media(w768) {
+            height: 100%;
+        }
+    }
+
+    &__title {
+        transform: translateX(-50%);
+        margin-left: 50%;
+
+        @include media(w768) {
+            max-width: 320px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 66px;
+        font-family: 'GetCoffee';
+
+        @include media(w768) {
+            font-size: 32px;
+        }
+    }
+    
+    &__text {
+
+        @include media(w768) {
+            
+            br {
+                display: none;
+            }
+        }
+    }
+
+    &__btn {
+
+        @include media(w1024) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__man {
+        display: block;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        max-height: 80%;
+
+        @include media(w1024) {
+            margin: 0 auto;
+            position: static;
+            max-width: 600px;
+            width: 95%;
+        }
+    }
+
+    &__clouds {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        min-width: 100%;
+
+        @include media(w1024) {
+            min-width: auto;
+        }
+
+        @include media(w768) {
+            max-width: 1024px;
+        }
+    }
+}

@@ -1,0 +1,250 @@
+.sec3 {
+    overflow: hidden;
+
+    @include media(w768) {
+        text-align: center;
+    }
+    
+    &__content {
+        background-image: linear-gradient(to bottom, $main-cyan, $main-cyan-dark);
+        margin-top: -180px;
+        padding-top: 240px;
+    }
+
+    &__content-container {
+        margin-bottom: 60px;
+
+        @include media(w768) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__img-content {
+        transform: translateY(-50%);
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        width: 100%;
+
+        @include media(w1024) {
+            left: 12%;
+        }
+
+        @include media(w768) {
+            transform: translateY(0);
+            background-color: $main-green;
+            position: static;
+            left: 20%;
+            right: 20%;
+            top: 20%;
+            width: auto;
+        }
+    }
+
+    &__img-text {
+        padding-right: 60%;
+        margin-bottom: 1.2em;
+
+        @include media(w1024) {
+            padding-right: 64%;
+        }
+
+        @include media(w768) {
+            padding-left: $container-side-padding-tablet;
+            padding-right: $container-side-padding-tablet;
+        }
+    }
+
+    &__img-wrap {
+        position: relative;
+
+        @include media(w1024) {
+            margin-left: -110px;
+            margin-right: -110px;
+        }
+
+        @include media(w768) {
+            margin-left: -$container-side-padding-tablet;
+            margin-right: -$container-side-padding-tablet;
+        }
+    }
+
+    &__img {
+        width: 100%;
+
+        &_pc {
+
+            @include media(w768) {
+                display: none;
+            }
+        }
+
+        &_mobile {
+            display: none;
+
+            @include media(w768) {
+                display: block;
+            }
+        }
+
+        &_decor {
+            display: none;
+
+            @include media(w768) {
+                display: block;
+            }
+        }
+    }
+
+    &__row {
+        display: flex;
+
+        @include media(w768) {
+            display: block;
+        }
+    }
+
+    &__col {
+        width: 50%;
+
+        p {
+            margin-bottom: 2em;
+        }
+
+        &_img {
+
+            @include media(w1024) {
+                display: flex;
+                align-items: center;
+                width: 40%;
+            }
+
+            @include media(w768) {
+                margin-bottom: 20px;
+            }
+        }
+
+        &_text {
+
+            @include media(w1024) {
+                width: 60%;
+            }
+        }
+
+        @include media(w768) {
+            width: auto;
+        }
+    }
+
+    &__btn {
+        
+        @include media(w768) {
+            margin-bottom: 1em;
+        }
+    }
+
+    &__decor-img {
+        display: block;
+
+        @include media(w1024) {
+            margin-left: -40px;
+            width: 100%;
+        }
+
+        @include media(w768) {
+            margin: 0 auto;
+            width: 90%;
+            max-width: 100%;
+        }
+    }
+
+    &__video-title {
+
+        @include media(w1024) {
+            margin-bottom: 1em;
+        }
+
+        @include media(w768) {
+            margin-bottom: 0.4em;
+        }
+    }
+
+    &__video-wrap {
+        text-align: center;
+
+        @include media(w768) {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+    }
+
+    &__video-container {
+        display: inline-block;
+        position: relative;
+
+        // @include media(w1024) {
+        //     width: 100%;
+        // }
+    }
+
+    &__video-bg {
+
+        @include media(w1024) {
+            width: 100%;
+        }
+    }
+
+    &__video-frame {
+        padding: 70px 60px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+
+        @include media(w768) {
+            padding: 6%;
+        }
+    }
+
+    &__decor {
+        position: absolute;
+        top: 50%;
+
+        &_left {
+            transform: translateY(-50%);
+            right: calc(100% + 20px);
+
+            @include media(w1024) {
+                transform: translateY(-50%) rotate(-35deg);
+                top: 100%;
+                left: -40px;
+            }
+        }
+
+        &_right {
+            transform: translateY(-50%) scaleX(-1);
+            left: calc(100% + 20px);
+
+            @include media(w1024) {
+                transform: translateY(-40%) rotate(-35deg) scaleX(-1);
+                top: 0;
+                left: auto;
+                right: -40px;
+                //left: -30px;
+            }
+        }
+
+        @include media(w768) {
+            display: none;
+        }
+    }
+
+    &__clouds {
+        display: block;
+
+        @include media(w768) {
+            max-width: 768px;
+        }
+    }
+}
